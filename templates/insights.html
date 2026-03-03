@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Insights</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  
+    <!-- Main Stylesheet (for background, etc.) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Custom CSS for this specific page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/insights.css') }}">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="page-container">
+        <!-- Header -->
+        <header class="page-header">
+            <!-- CORRECTED LINK -->
+            <a href="{{ url_for('dashboard') }}" class="btn">
+                <i class='bx bx-arrow-back'></i> Back to Dashboard
+            </a>
+            <h1>Detailed Insights</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="insights-content panel">
+
+            <!-- Tabs Navigation -->
+            <nav class="tabs">
+                <button class="tab active" data-tab="breakdown">Per-Answer Breakdown</button>
+                <button class="tab" data-tab="heatmap">Confidence Heatmap</button>
+                <button class="tab" data-tab="sentiment">Sentiment Trend</button>
+                <button class="tab" data-tab="transcript">Transcript</button>
+            </nav>
+
+            <!-- Tabs Content -->
+            <div class="tab-content">
+
+                <!-- Breakdown Tab -->
+                <div id="breakdown" class="tab-pane active">
+                    <div class="accordion">
+
+                        <!-- Question 1 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Q1: Tell me about yourself.</h3>
+                                <i class='bx bx-chevron-down accordion-icon'></i>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="answer-analysis">
+                                    <div class="answer-summary">
+                                        <h4>Analysis</h4>
+                                        <p>Answer was concise and hit key points. Confidence was high.</p>
+                                    </div>
+                                    <div class="radar-chart-container">
+                                        <canvas id="radarChart1"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Q2: Why do you want to work here?</h3>
+                                <i class='bx bx-chevron-down accordion-icon'></i>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="answer-analysis">
+                                    <div class="answer-summary">
+                                        <h4>Analysis</h4>
+                                        <p>Good sentiment, but missed a few company-specific keywords.</p>
+                                    </div>
+                                    <div class="radar-chart-container">
+                                        <canvas id="radarChart2"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Confidence Heatmap Tab -->
+                <div id="heatmap" class="tab-pane">
+                    <div class="chart-container">
+                        <canvas id="confidenceChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Sentiment Trend Tab -->
+                <div id="sentiment" class="tab-pane">
+                    <div class="chart-container">
+                        <canvas id="sentimentTrendChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Transcript Tab -->
+                <div id="transcript" class="tab-pane">
+                    <div class="transcript-entry">
+                        <p><strong>Interviewer:</strong> Tell me about yourself.</p>
+                        <p>
+                            <strong>You:</strong> Well, <span class="negative">um</span>, I'm a software developer...
+                            I enjoy, <span class="negative">like</span>, building scalable applications.
+                            I'm proficient in <span class="positive">JavaScript</span> and <span class="positive">React</span>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+<script src="{{ url_for('static', filename='js/insights.js') }}"></script>
+</body>
+</html>
+

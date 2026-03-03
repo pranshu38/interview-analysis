@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Interview Platform</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/interview.css') }}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    /* Inline styles for buttons layout */
+    .question-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .question-buttons .btn {
+      flex: 1;
+      padding: 0.6rem 0;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .question-buttons .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .question-buttons .btn-secondary {
+      background-color: #64748b; /* Tailwind slate-500 */
+      color: #f1f5f9;
+    }
+
+    .question-buttons .btn-secondary:hover {
+      background-color: #475569; /* Darker hover */
+    }
+
+    /* Mic pulse animation */
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.7; }
+    }
+
+    #mic-cue-container i.mic-beat {
+      animation: pulse 1s infinite;
+      color: #00aaff;
+      font-size: 2rem;
+    }
+
+    /* ========== AUDIO ANALYSIS PANEL ========== */
+    .audio-analysis-panel {
+      margin-top: 15px;
+      background: #111;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .audio-status {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #00aaff;
+    }
+
+    .audio-status i {
+      animation: pulse 1s infinite;
+      font-size: 1.5rem;
+    }
+
+    .audio-stats {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .audio-stats div {
+      background: #000;
+      padding: 5px 10px;
+      border-radius: 6px;
+      min-width: 60px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,170,255,0.3);
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="main-grid">
+
+  <!-- Camera & Timer Block -->
+  <div class="interview-console panel">
+    <div class="video-container">
+      <video id="webcam-preview" autoplay playsinline></video>
+
+      <!-- AUDIO ANALYSIS PANEL -->
+      <div class="audio-analysis-panel" id="audio-analysis-panel">
+        <div class="audio-status">
+          <i class='bx bxs-microphone'></i>
+          <span id="audio-status-text">Idle</span>
+        </div>
+        <div class="audio-stats">
+          <div>Words: <span id="audio-words">0</span></div>
+          <div>WPM: <span id="audio-wpm">0</span></div>
+          <div>Filler: <span id="audio-fillers">0</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-panel">
+      <div class="indicator">
+        <i class='bx bxs-timer'></i>
+        <div class="indicator-text">
+          <span class="label">Timer</span>
+          <span class="value" id="timer-display">00:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question Block -->
+  <div class="question-panel panel">
+    <div class="panel-header">
+      <h3>Interview Session</h3>
+      <p>Questions will appear here. Click "Next Question" or "Skip Question" to proceed.</p>
+    </div>
+
+    <div class="panel-content">
+      <!-- Mic Beat Animation -->
+      <div id="mic-cue-container" style="display:none; text-align:center; margin-bottom:10px;">
+        <i class='bx bxs-microphone mic-beat'></i>
+      </div>
+
+      <!-- Question Display Area -->
+      <div id="ai-question-area" class="content-section">
+        Loading your first question...
+      </div>
+
+      <!-- Fake Process Container -->
+      <div id="fake-process-container" class="fake-process-interview" style="display:none; margin-top:10px;"></div>
+
+      <!-- Next / Skip Buttons -->
+      <div class="question-buttons">
+        <button class="btn" id="next-q-btn">Next Question</button>
+        <button class="btn btn-secondary" id="skip-q-btn">Skip Question</button>
+      </div>
+    </div>
+
+    <div class="panel-footer">
+      <button class="btn btn-primary" id="submit-btn">Stop & Submit Interview</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='js/interview.js') }}"></script>
+
+</body>
+</html>

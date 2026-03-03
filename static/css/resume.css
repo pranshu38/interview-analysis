@@ -1,0 +1,109 @@
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#upload-section {
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--text-secondary-on-light);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 3rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    display: block;
+}
+
+.upload-area:hover {
+    background-color: #f9fafb;
+    border-color: var(--accent-primary);
+}
+
+.upload-area i {
+    font-size: 3.5rem;
+    color: var(--accent-primary);
+}
+
+.upload-area p {
+    margin-top: 1rem;
+    color: var(--text-secondary-on-light);
+}
+
+#file-name-display {
+    margin-top: 1rem;
+    color: var(--accent-primary);
+    font-weight: 500;
+    display: block;
+}
+
+.analysis-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    animation: fadeIn 0.5s;
+}
+
+.analysis-card {
+    padding: 1.5rem;
+}
+
+.match-score-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 1rem auto 0;
+}
+
+.match-score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+}
+
+.keywords-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.keywords-list li {
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.keywords-list .found {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+.keywords-list .missing {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.suggestions {
+    grid-column: 1 / -1;
+    background-color: #dbeafe;
+    color: #1e40af;
+}

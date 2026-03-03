@@ -1,0 +1,1726 @@
+{
+  "Software Engineering": [
+    "Can you explain the concept of object-oriented programming?",
+    "Describe your understanding of OOP and its principles.",
+    "How would you explain object-oriented programming to a beginner?",
+    
+    "What is inheritance in programming?",
+    "Can you give an example of inheritance in your past projects?",
+    "Explain how inheritance works and why it is useful.",
+    
+    "What is polymorphism in software engineering?",
+    "Describe polymorphism with an example from your experience.",
+    "How would you implement polymorphism in a project?",
+    
+    "What is encapsulation and why is it important?",
+    "Explain encapsulation with a practical example.",
+    "How do you ensure data encapsulation in your code?",
+    
+    "Describe the software development lifecycle (SDLC).",
+    "Can you walk me through the stages of SDLC?",
+    "Explain how SDLC impacts software project success.",
+    
+    "What is the difference between Agile and Waterfall methodology?",
+    "Describe a project where you applied Agile principles.",
+    "Explain when you would choose Waterfall over Agile.",
+    
+    "How do you manage version control in your projects?",
+    "Which version control systems have you used?",
+    "Explain how Git helps in collaborative development.",
+    
+    "What is unit testing and why is it important?",
+    "Can you give an example of how you wrote unit tests?",
+    "How does unit testing improve software quality?",
+    
+    "Explain continuous integration (CI) and continuous deployment (CD).",
+    "Have you implemented CI/CD pipelines in any project?",
+    "Why is CI/CD important in modern software engineering?",
+    
+    "How do you ensure code quality in your team?",
+    "What tools or practices do you use for code review?",
+    "Explain how static analysis tools help maintain quality.",
+    
+    "Explain the concept of design patterns in software development.",
+    "Can you give an example of a design pattern you have used?",
+    "How do design patterns improve software architecture?",
+    
+    "What is the difference between a process and a thread?",
+    "Explain multithreading and its use cases in your projects.",
+    "How do you manage concurrency in software applications?",
+    
+    "Describe the concept of database normalization.",
+    "Why is normalization important in database design?",
+    "Can you give an example where you applied normalization?",
+    
+    "What are RESTful APIs and how do you use them?",
+    "Explain the difference between REST and SOAP APIs.",
+    "Have you designed or consumed REST APIs in your projects?",
+    
+    "What is the difference between SQL and NoSQL databases?",
+    "When would you choose NoSQL over SQL?",
+    "Explain how you handled data storage in your past projects.",
+    
+    "Explain exception handling in programming.",
+    "How do you implement robust error handling in your code?",
+    "Give an example of a situation where exception handling saved your project from a crash.",
+    
+    "What are the key principles of clean code?",
+    "How do you ensure your code is readable and maintainable?",
+    "Explain a situation where following clean code principles helped your team.",
+    
+    "What is refactoring and when should it be done?",
+    "Can you give an example of code refactoring in a project?",
+    "Why is refactoring important for long-term software maintenance?",
+    
+    "Explain the concept of software scalability.",
+    "How would you design a system to handle increasing load?",
+    "Give an example of scaling a project you worked on.",
+    
+    "What is a memory leak and how do you prevent it?",
+    "Describe a situation where you encountered a memory leak.",
+    "Which tools or practices do you use to detect and fix memory leaks?",
+    
+    "What are the SOLID principles in object-oriented programming?",
+    "Can you give examples of applying SOLID principles in your code?",
+    "Why are SOLID principles important for maintainable software?",
+    
+    "What is the difference between synchronous and asynchronous programming?",
+    "Give an example of when you used asynchronous programming.",
+    "Why would you prefer async over sync in a particular scenario?",
+    
+    "Explain the concept of caching in software applications.",
+    "How do you implement caching to improve performance?",
+    "Can you give an example where caching solved a performance issue?",
+    
+    "What is the difference between stack and heap memory?",
+    "How do stack and heap affect program performance?",
+    "Can you give an example of a bug related to memory allocation?",
+    
+    "Describe the MVC (Model-View-Controller) architecture.",
+    "How have you implemented MVC in your projects?",
+    "Why is MVC a popular pattern for software applications?",
+    
+    "What is dependency injection and why is it used?",
+    "Explain a scenario where dependency injection improved your code.",
+    "How does dependency injection make software more testable?",
+    
+    "Explain the concept of microservices architecture.",
+    "How is microservices different from monolithic architecture?",
+    "What challenges have you faced while implementing microservices?",
+    
+    "What is a database transaction and why is it important?",
+    "Explain ACID properties in database transactions.",
+    "Give an example where a transaction prevented data inconsistency.",
+    
+    "What is the difference between compile-time and run-time errors?",
+    "Give examples of compile-time and run-time errors.",
+    "How do you debug run-time errors effectively?",
+    
+    "Explain the concept of integration testing.",
+    "How does integration testing differ from unit testing?",
+    "Have you used any frameworks for integration testing?",
+    
+    "What is coupling and cohesion in software design?",
+    "Explain high cohesion and low coupling with examples.",
+    "Why are these principles important in software engineering?"
+  ]
+
+
+
+,
+  "Web Development": [
+    "What are the main differences between HTML, CSS, and JavaScript?",
+    "Explain how HTML, CSS, and JS work together to build a webpage.",
+    "Can you describe the roles of HTML, CSS, and JavaScript in web development?",
+
+    "What is the DOM (Document Object Model) and how do you interact with it?",
+    "Explain how the DOM represents a webpage's structure.",
+    "How do you manipulate the DOM using JavaScript?",
+
+    "What are semantic HTML elements and why are they important?",
+    "Give examples of semantic HTML tags and their uses.",
+    "How does using semantic HTML improve accessibility and SEO?",
+
+    "Explain the difference between inline, block, and inline-block elements.",
+    "How do CSS display properties affect layout?",
+    "Give examples of when to use block vs inline-block vs inline elements.",
+
+    "What are CSS selectors and combinators?",
+    "Explain how CSS specificity works.",
+    "How do you decide which selector to use for styling elements?",
+
+    "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
+    "Explain how CSS positioning affects element layout.",
+    "Give an example where you used CSS positioning effectively.",
+
+    "Describe the box model in CSS.",
+    "How do margin, border, padding, and content affect layout?",
+    "Explain common issues caused by misunderstanding the CSS box model.",
+
+    "What is the difference between CSS Grid and Flexbox?",
+    "When would you use CSS Grid vs Flexbox?",
+    "Explain how to create a responsive layout using CSS Grid or Flexbox.",
+
+    "What is responsive web design?",
+    "How do media queries work in CSS?",
+    "Explain how you make a website responsive across devices.",
+
+    "What are JavaScript closures and why are they useful?",
+    "Can you give an example of a closure in your code?",
+    "Explain how closures help with data privacy in JS.",
+
+    "Explain the difference between var, let, and const in JavaScript.",
+    "When should you use let vs const?",
+    "Give an example of variable scope in JavaScript.",
+
+    "What are ES6 features you use most frequently?",
+    "Explain the benefits of using arrow functions, template literals, and destructuring.",
+    "Give examples of ES6 features that improved your code.",
+
+    "What is asynchronous programming in JavaScript?",
+    "Explain callbacks, promises, and async/await.",
+    "Give an example of handling asynchronous operations in your project.",
+
+    "What is the difference between localStorage, sessionStorage, and cookies?",
+    "When would you use each storage type?",
+    "Explain how browser storage can affect web application behavior.",
+
+    "What are RESTful APIs and how do you interact with them?",
+    "Explain GET, POST, PUT, DELETE HTTP methods.",
+    "Give an example of fetching data from an API in JavaScript.",
+
+    "What is CORS and why is it important?",
+    "Explain how to solve CORS issues in web applications.",
+    "Give an example of a project where you handled CORS.",
+
+    "What is the difference between client-side and server-side rendering?",
+    "Explain pros and cons of CSR vs SSR.",
+    "Which rendering method did you use in your project and why?",
+
+    "What are some popular frontend frameworks and libraries?",
+    "Explain why you would choose React, Angular, or Vue for a project.",
+    "Give an example of a project built with a frontend framework.",
+
+    "What is state management in frontend applications?",
+    "Explain how you manage state in React or Vue.",
+    "Give examples of using Redux or Vuex in your projects.",
+
+    "What is the difference between single-page applications (SPA) and multi-page applications (MPA)?",
+    "Explain how routing works in a SPA.",
+    "Give an example of when you used a SPA over an MPA.",
+
+    "What is web accessibility (a11y) and why is it important?",
+    "Give examples of accessibility features you implemented.",
+    "How do you test your web applications for accessibility?",
+
+    "What are Progressive Web Apps (PWAs)?",
+    "Explain benefits of PWAs over traditional web apps.",
+    "Give an example of a PWA feature you implemented.",
+
+    "What is the role of backend in web development?",
+    "Explain how frontend communicates with backend.",
+    "Give an example of your backend implementation in a project.",
+
+    "What are popular backend frameworks for web development?",
+    "Explain the benefits of using Node.js, Django, or Flask.",
+    "Which backend framework do you prefer and why?",
+
+    "What is database integration and how do you implement it?",
+    "Explain how you connect a web application to a database.",
+    "Give examples of relational and non-relational database usage.",
+
+    "What is authentication and authorization in web apps?",
+    "Explain the difference between authentication and authorization.",
+    "Give an example of implementing user authentication in your project.",
+
+    "What are cookies and sessions? How are they different?",
+    "Explain how sessions help maintain user state.",
+    "Give an example of when you used cookies for session management.",
+
+    "What are common web security threats?",
+    "Explain how to prevent XSS, CSRF, and SQL injection attacks.",
+    "Give an example where you applied security measures in a project.",
+
+    "How do you optimize web application performance?",
+    "Explain techniques like lazy loading, minification, and caching.",
+    "Give an example of a performance optimization you implemented.",
+
+    "What are webhooks and how are they used?",
+    "Explain an example of integrating third-party services with webhooks.",
+    "How do webhooks differ from API requests?",
+
+    "What is responsive image handling in web development?",
+    "Explain how to optimize images for performance and quality.",
+    "Give an example of using srcset or picture tags.",
+
+    "What are some testing strategies for web applications?",
+    "Explain unit testing, integration testing, and end-to-end testing.",
+    "Which testing frameworks have you used for web apps?",
+
+    "How do you deploy a web application?",
+    "Explain different deployment platforms like AWS, Heroku, or Netlify.",
+    "Give an example of your deployment workflow.",
+
+    "What are REST vs GraphQL APIs?",
+    "Explain advantages of using GraphQL over REST.",
+    "Give an example of a project where you used GraphQL.",
+
+    "What is server-side caching and why is it used?",
+    "Explain how caching improves performance.",
+    "Give an example of implementing caching in your web app.",
+
+    "What are web sockets and how are they used?",
+    "Explain a real-time application example using WebSockets.",
+    "How do WebSockets differ from HTTP requests?",
+
+    "Explain the MVC architecture in web applications.",
+    "How have you implemented MVC in your web projects?",
+    "Why is MVC important for maintainable code?",
+
+    "What is REST API versioning and why is it needed?",
+    "Explain strategies for API versioning.",
+    "Give an example of maintaining multiple API versions.",
+
+    "What is pagination and why is it important?",
+    "Explain different pagination techniques.",
+    "Give an example of implementing pagination in a web project.",
+
+    "What is web app logging and monitoring?",
+    "Explain tools for logging and monitoring web applications.",
+    "Give an example of solving a production issue using logs."
+  ]
+
+  ,
+  "Data Analytics": [
+    "What is data analytics and why is it important?",
+    "Explain how data analytics helps in business decision-making.",
+    "Can you describe the role of a data analyst in a company?",
+    
+    "What are the different types of data analytics?",
+    "Explain descriptive, diagnostic, predictive, and prescriptive analytics.",
+    "Give examples of when each type of analytics would be used.",
+    
+    "What is the difference between structured and unstructured data?",
+    "How do you handle unstructured data in analytics projects?",
+    "Give an example of a project where you worked with both structured and unstructured data.",
+    
+    "What are common data visualization tools?",
+    "Explain how tools like Tableau, Power BI, or Matplotlib are used.",
+    "Give an example of a visualization you created to present insights.",
+    
+    "What is data cleaning and why is it important?",
+    "Describe common data cleaning techniques.",
+    "Give an example of a messy dataset you cleaned and analyzed.",
+    
+    "Explain the concept of data normalization.",
+    "How does normalization help in data analysis?",
+    "Give an example of applying normalization in your work.",
+    
+    "What is the difference between supervised and unsupervised learning?",
+    "Give examples of algorithms for supervised and unsupervised learning.",
+    "How have you applied these techniques in your projects?",
+    
+    "Explain the concept of correlation and causation.",
+    "How do you check for correlation in datasets?",
+    "Give an example where correlation helped derive insights.",
+    
+    "What are KPIs (Key Performance Indicators)?",
+    "How do you identify and track KPIs for a project?",
+    "Give an example of KPIs you monitored in a past project.",
+    
+    "Explain A/B testing and its importance in analytics.",
+    "How do you design an A/B test?",
+    "Give an example of a result obtained from an A/B test.",
+    
+    "What is predictive modeling in data analytics?",
+    "Explain how predictive models help businesses forecast trends.",
+    "Give an example of a predictive model you implemented.",
+    
+    "How do you handle missing or null data in datasets?",
+    "Explain techniques like imputation, deletion, or interpolation.",
+    "Give an example where handling missing data changed your analysis outcome.",
+    
+    "What is a data pipeline and why is it important?",
+    "Describe the components of a data pipeline.",
+    "Give an example of a pipeline you built or worked on.",
+    
+    "Explain the concept of hypothesis testing.",
+    "Give examples of statistical tests used for hypothesis testing.",
+    "Describe a project where hypothesis testing was crucial.",
+    
+    "What is the difference between mean, median, and mode?",
+    "How do you decide which measure of central tendency to use?",
+    "Give an example where this choice impacted your analysis.",
+    
+    "Explain the concept of standard deviation and variance.",
+    "Why are they important in understanding data?",
+    "Give an example of applying standard deviation in a project.",
+    
+    "What is clustering in data analytics?",
+    "Explain algorithms like K-Means or DBSCAN.",
+    "Give an example of a clustering project you worked on.",
+    
+    "What is regression analysis?",
+    "Explain the difference between linear and logistic regression.",
+    "Give an example where regression analysis helped predict outcomes.",
+    
+    "What is data storytelling?",
+    "Why is presenting data effectively important?",
+    "Give an example of a report or dashboard you created for stakeholders.",
+    
+    "How do you ensure data integrity and quality?",
+    "Explain the processes or checks you use for accurate data.",
+    "Give an example where ensuring data quality was critical to your project."
+  ]
+  ,
+  
+  "Digital Marketing": [
+    "What is digital marketing and why is it important?",
+    "Explain how digital marketing differs from traditional marketing.",
+    "Can you describe the role of a digital marketer in a company?",
+
+    "What are the main types of digital marketing?",
+    "Explain SEO, SEM, content marketing, social media marketing, and email marketing.",
+    "Give examples of campaigns for each type of digital marketing.",
+
+    "What is SEO (Search Engine Optimization)?",
+    "Explain the difference between on-page and off-page SEO.",
+    "How have you improved website ranking using SEO techniques?",
+
+    "What are keywords and how do you perform keyword research?",
+    "Explain how long-tail and short-tail keywords differ.",
+    "Give an example of successful keyword optimization in a campaign.",
+
+    "What is SEM (Search Engine Marketing)?",
+    "Explain the difference between SEM and SEO.",
+    "Give an example of a paid ad campaign you managed.",
+
+    "What is content marketing and why is it important?",
+    "Explain the process of creating a content marketing strategy.",
+    "Give an example of content that drove high engagement.",
+
+    "What are the main social media platforms used for marketing?",
+    "Explain the difference in strategy for platforms like Facebook, Instagram, LinkedIn, and Twitter.",
+    "Give an example of a successful social media campaign.",
+
+    "What is email marketing and how do you measure its success?",
+    "Explain the difference between transactional, promotional, and automated emails.",
+    "Give an example of improving open and click-through rates.",
+
+    "What are KPIs in digital marketing?",
+    "Explain important KPIs like CTR, conversion rate, and ROI.",
+    "Give an example of how you tracked and improved a KPI.",
+
+    "What is Google Analytics and why is it used?",
+    "Explain how to track user behavior using Google Analytics.",
+    "Give an example of insights you gained from analytics.",
+
+    "What is A/B testing in digital marketing?",
+    "Explain how to design and analyze an A/B test.",
+    "Give an example of improving a campaign using A/B testing.",
+
+    "What is PPC (Pay-Per-Click) advertising?",
+    "Explain platforms like Google Ads and Bing Ads.",
+    "Give an example of a PPC campaign and its results.",
+
+    "What is the difference between organic and paid traffic?",
+    "How do you balance SEO and paid campaigns for best results?",
+    "Give an example of a project where both strategies were used.",
+
+    "What is influencer marketing?",
+    "Explain how to identify and collaborate with influencers.",
+    "Give an example of a successful influencer marketing campaign.",
+
+    "What is conversion rate optimization (CRO)?",
+    "Explain techniques for improving website conversion.",
+    "Give an example of a CRO strategy you implemented.",
+
+    "What are backlinks and why are they important?",
+    "Explain strategies for acquiring high-quality backlinks.",
+    "Give an example of improving domain authority through backlinks.",
+
+    "What is social media engagement?",
+    "Explain metrics like likes, shares, comments, and impressions.",
+    "Give an example of increasing engagement for a campaign.",
+
+    "What is content curation vs content creation?",
+    "Explain how both play a role in marketing strategy.",
+    "Give an example of using curated content effectively.",
+
+    "What is marketing automation?",
+    "Explain tools like HubSpot, Mailchimp, or Marketo.",
+    "Give an example of automating campaigns to save time and improve results.",
+
+    "What is affiliate marketing?",
+    "Explain how affiliate programs work.",
+    "Give an example of managing or promoting an affiliate program.",
+
+    "What are landing pages and why are they important?",
+    "Explain how to optimize a landing page for conversions.",
+    "Give an example of a successful landing page you created.",
+
+    "What is retargeting and how is it used in campaigns?",
+    "Explain tools and techniques for retargeting audiences.",
+    "Give an example of a retargeting campaign with improved conversions.",
+
+    "How do you perform competitor analysis in digital marketing?",
+    "Explain tools and strategies for competitor research.",
+    "Give an example of insights you gained from competitor analysis.",
+
+    "What is Google Search Console and how is it used?",
+    "Explain how to monitor website performance and indexing.",
+    "Give an example of using Search Console to improve site SEO.",
+
+    "What is the difference between impressions and clicks?",
+    "Explain why both metrics matter in marketing campaigns.",
+    "Give an example of improving CTR for a campaign.",
+
+    "What is the buyer’s journey?",
+    "Explain stages like awareness, consideration, and decision.",
+    "Give an example of mapping marketing content to the buyer’s journey.",
+
+    "What is content marketing ROI and how do you measure it?",
+    "Explain methods for calculating ROI on content campaigns.",
+    "Give an example of improving ROI through content strategy."
+  ]
+  ,
+  
+  "Finance": [
+    "What are the key financial statements and their purposes?",
+    "Explain the difference between the income statement, balance sheet, and cash flow statement.",
+    "Can you walk me through reading a company’s financial statements?",
+
+    "What is working capital and why is it important?",
+    "Explain how you calculate working capital.",
+    "Give an example of managing working capital in a business scenario.",
+
+    "What is the difference between revenue and profit?",
+    "Explain gross profit, operating profit, and net profit.",
+    "Give an example of calculating profit from a financial report.",
+
+    "What is the time value of money?",
+    "Explain concepts like present value and future value.",
+    "Give an example of applying the time value of money in decision-making.",
+
+    "What is NPV (Net Present Value) and how is it used?",
+    "Explain the difference between NPV and IRR.",
+    "Give an example of evaluating a project using NPV.",
+
+    "What is ROI (Return on Investment)?",
+    "Explain how ROI helps in evaluating financial performance.",
+    "Give an example of calculating ROI for an investment.",
+
+    "What is financial leverage?",
+    "Explain the difference between debt and equity financing.",
+    "Give an example of using leverage in a business context.",
+
+    "What is risk and return in finance?",
+    "Explain how risk affects investment decisions.",
+    "Give an example of balancing risk and return in a portfolio.",
+
+    "What is a budget and why is it important?",
+    "Explain the difference between operating and capital budgets.",
+    "Give an example of preparing a budget for a department or project.",
+
+    "What are financial ratios?",
+    "Explain liquidity, profitability, and solvency ratios.",
+    "Give an example of analyzing a company using financial ratios.",
+
+    "What is the difference between equity and debt?",
+    "Explain how companies raise capital through equity and debt.",
+    "Give an example of choosing between equity and debt financing.",
+
+    "What is cash flow and why is it important?",
+    "Explain operating, investing, and financing cash flows.",
+    "Give an example of improving cash flow in a company.",
+
+    "What is capital budgeting?",
+    "Explain methods like NPV, IRR, and payback period.",
+    "Give an example of evaluating a capital investment decision.",
+
+    "What is cost of capital?",
+    "Explain WACC (Weighted Average Cost of Capital).",
+    "Give an example of using WACC in financial decision-making.",
+
+    "What is financial forecasting?",
+    "Explain techniques like trend analysis and regression forecasting.",
+    "Give an example of creating a financial forecast for a company.",
+
+    "What is the difference between short-term and long-term financing?",
+    "Explain scenarios where each type is appropriate.",
+    "Give an example of managing short-term vs long-term finance.",
+
+    "What is working capital management?",
+    "Explain how inventory, receivables, and payables are managed.",
+    "Give an example of improving a company’s working capital efficiency.",
+
+    "What are derivatives and how are they used in finance?",
+    "Explain options, futures, and swaps.",
+    "Give an example of hedging risk using derivatives.",
+
+    "What is the difference between primary and secondary markets?",
+    "Explain IPOs and stock trading in secondary markets.",
+    "Give an example of participating in or analyzing market activity.",
+
+    "What is financial risk management?",
+    "Explain market, credit, and operational risk.",
+    "Give an example of mitigating financial risk in a company.",
+
+    "What is portfolio diversification?",
+    "Explain how diversification reduces risk.",
+    "Give an example of constructing a diversified investment portfolio.",
+
+    "What are bonds and how do they work?",
+    "Explain bond pricing and yield calculation.",
+    "Give an example of investing in bonds.",
+
+    "What is equity analysis?",
+    "Explain techniques like fundamental and technical analysis.",
+    "Give an example of valuing a company’s stock.",
+
+    "What is the difference between cash accounting and accrual accounting?",
+    "Explain how revenue recognition differs in both methods.",
+    "Give an example of applying accrual accounting principles.",
+
+    "What is the role of a financial analyst?",
+    "Explain key responsibilities such as budgeting, forecasting, and reporting.",
+    "Give an example of a financial analysis you performed.",
+
+    "What is inflation and how does it affect finance?",
+    "Explain the impact of inflation on investments and savings.",
+    "Give an example of planning for inflation in financial decisions.",
+
+    "What is the difference between systematic and unsystematic risk?",
+    "Explain how each type of risk impacts investments.",
+    "Give an example of mitigating unsystematic risk in a portfolio.",
+
+    "What is the capital asset pricing model (CAPM)?",
+    "Explain how CAPM is used to estimate expected returns.",
+    "Give an example of applying CAPM in investment decisions.",
+
+    "What is EBITDA?",
+    "Explain why EBITDA is important for evaluating a company’s performance.",
+    "Give an example of calculating EBITDA from financial statements.",
+
+    "What is the difference between market value and book value?",
+    "Explain how market value reflects investor perception.",
+    "Give an example of comparing market and book value of a company.",
+
+    "What is leverage ratio?",
+    "Explain debt-to-equity and debt-to-assets ratios.",
+    "Give an example of assessing a company’s financial leverage.",
+
+    "What is the difference between operating margin and net margin?",
+    "Explain how margins reflect profitability.",
+    "Give an example of improving profit margins.",
+
+    "What is break-even analysis?",
+    "Explain how to calculate break-even point.",
+    "Give an example of performing break-even analysis for a product.",
+
+    "What is financial modeling?",
+    "Explain building a model to forecast financial performance.",
+    "Give an example of creating a financial model for decision-making.",
+
+    "What is the difference between short-term and long-term investments?",
+    "Explain risk and return differences between both.",
+    "Give an example of selecting investments based on time horizon.",
+
+    "What is a stock option?",
+    "Explain the difference between call and put options.",
+    "Give an example of using options in trading or compensation plans.",
+
+    "What is the difference between debt instruments and equity instruments?",
+    "Explain how both provide capital to businesses.",
+    "Give an example of raising capital using each instrument.",
+
+    "What are the main financial markets?",
+    "Explain the role of stock exchanges, bond markets, and forex markets.",
+    "Give an example of participating or analyzing market trends.",
+
+    "What is risk-adjusted return?",
+    "Explain metrics like Sharpe ratio and Treynor ratio.",
+    "Give an example of evaluating investment performance using risk-adjusted returns.",
+
+    "What is the difference between primary and secondary research in finance?",
+    "Explain how each is used in market analysis and decision-making.",
+    "Give an example of applying research to financial planning.",
+
+    "What is the difference between tangible and intangible assets?",
+    "Explain how asset valuation differs.",
+    "Give an example of valuing a company’s assets.",
+
+    "What is financial statement analysis?",
+    "Explain horizontal and vertical analysis techniques.",
+    "Give an example of analyzing a company’s financial statements.",
+
+    "What is the difference between strategic and operational finance?",
+    "Explain how each supports business objectives.",
+    "Give an example of applying strategic financial planning."
+  ]
+
+  ,
+  
+  "Human Resource": [
+    "What are the key functions of human resource management?",
+    "Explain the difference between HRM and personnel management.",
+    "Give examples of how HR contributes to organizational success.",
+
+    "What is the recruitment process?",
+    "Explain the steps involved in hiring a new employee.",
+    "Give an example of a successful recruitment strategy you used or studied.",
+
+    "What is employee onboarding?",
+    "Explain the importance of onboarding new hires.",
+    "Give an example of an effective onboarding program.",
+
+    "What is performance management?",
+    "Explain how performance appraisals are conducted.",
+    "Give an example of a performance evaluation method.",
+
+    "What are key HR metrics?",
+    "Explain metrics like turnover rate, absenteeism, and employee engagement.",
+    "Give an example of analyzing HR metrics to improve employee performance.",
+
+    "What is employee engagement?",
+    "Explain strategies to improve employee engagement.",
+    "Give an example of a program or initiative that increased engagement.",
+
+    "What is talent management?",
+    "Explain how talent is attracted, developed, and retained.",
+    "Give an example of a talent management initiative.",
+
+    "What is training and development?",
+    "Explain the importance of continuous employee development.",
+    "Give an example of a training program and its impact.",
+
+    "What is succession planning?",
+    "Explain how organizations prepare for key role replacements.",
+    "Give an example of a successful succession plan.",
+
+    "What is compensation and benefits management?",
+    "Explain different types of employee compensation and perks.",
+    "Give an example of designing a compensation plan.",
+
+    "What is the difference between intrinsic and extrinsic motivation?",
+    "Explain how each type affects employee performance.",
+    "Give an example of motivating employees using intrinsic or extrinsic rewards.",
+
+    "What is HR compliance?",
+    "Explain how HR ensures adherence to labor laws and regulations.",
+    "Give an example of maintaining compliance in an organization.",
+
+    "What is employee retention?",
+    "Explain strategies to retain top talent.",
+    "Give an example of reducing employee turnover through HR practices.",
+
+    "What is HR analytics?",
+    "Explain how data-driven decisions improve HR outcomes.",
+    "Give an example of using HR analytics for workforce planning.",
+
+    "What is diversity and inclusion in the workplace?",
+    "Explain why D&I is important for organizational success.",
+    "Give an example of implementing a diversity initiative.",
+
+    "What is conflict resolution?",
+    "Explain methods of resolving workplace conflicts.",
+    "Give an example of resolving a conflict between employees.",
+
+    "What is employee feedback?",
+    "Explain the role of feedback in performance improvement.",
+    "Give an example of an effective feedback system.",
+
+    "What is organizational culture?",
+    "Explain how culture affects employee behavior and productivity.",
+    "Give an example of shaping or improving workplace culture.",
+
+    "What is HR’s role in change management?",
+    "Explain how HR helps employees adapt to organizational changes.",
+    "Give an example of facilitating smooth change implementation.",
+
+    "What is strategic HR planning?",
+    "Explain how HR aligns workforce planning with organizational goals.",
+    "Give an example of planning HR resources strategically.",
+
+    "What is employee wellness and work-life balance?",
+    "Explain initiatives that promote wellness and balance.",
+    "Give an example of a program that improved employee wellbeing.",
+
+    "What are key challenges in modern HR?",
+    "Explain challenges like remote work, talent shortage, and technology adoption.",
+    "Give an example of overcoming an HR challenge in a workplace.",
+
+    "What is HRIS (Human Resource Information System)?",
+    "Explain how HRIS supports HR functions.",
+    "Give an example of implementing an HRIS in an organization.",
+
+    "What is performance-based pay?",
+    "Explain how it motivates employees.",
+    "Give an example of implementing a performance-linked incentive plan.",
+
+    "What is employee engagement survey?",
+    "Explain how surveys measure employee satisfaction.",
+    "Give an example of improving engagement based on survey results.",
+
+    "What is workforce planning?",
+    "Explain how HR forecasts staffing needs.",
+    "Give an example of aligning workforce planning with business objectives.",
+
+    "What is onboarding vs orientation?",
+    "Explain the differences and importance of each.",
+    "Give an example of a structured onboarding and orientation program.",
+
+    "What is HR’s role in organizational development?",
+    "Explain interventions to improve efficiency and culture.",
+    "Give an example of an OD initiative led by HR.",
+
+    "What is grievance handling?",
+    "Explain steps to address employee complaints.",
+    "Give an example of effectively resolving a grievance.",
+
+    "What is employee engagement vs employee satisfaction?",
+    "Explain the difference and importance of both.",
+    "Give an example of initiatives targeting engagement rather than just satisfaction."
+  ]
+  ,
+  
+  "Project Management": [
+    "What is project management and why is it important?",
+    "Explain the different phases of project management.",
+    "Can you describe a project you managed from start to finish?",
+    
+    "What is a project charter and why is it needed?",
+    "How do you create a project charter?",
+    "Give an example of a project where a project charter helped set clear goals.",
+    
+    "What is the difference between a project, program, and portfolio?",
+    "Explain how portfolio management differs from project management.",
+    "Give an example of managing multiple projects simultaneously.",
+    
+    "What is project scope and how do you define it?",
+    "Explain scope creep and how to manage it.",
+    "Give an example of handling scope changes in a project.",
+    
+    "What are the key project management methodologies?",
+    "Explain the differences between Agile, Waterfall, and Scrum.",
+    "Which methodology have you used in your projects and why?",
+    
+    "What is a Gantt chart and how is it used?",
+    "Explain how to track project progress using a Gantt chart.",
+    "Give an example of creating a project schedule using a Gantt chart.",
+    
+    "What is risk management in projects?",
+    "Explain how to identify, assess, and mitigate risks.",
+    "Give an example of handling a risk that impacted a project.",
+    
+    "What is a project budget and how do you manage it?",
+    "Explain techniques for cost estimation and control.",
+    "Give an example of managing a project budget effectively.",
+    
+    "What is project quality management?",
+    "Explain tools and techniques to ensure quality in a project.",
+    "Give an example of improving quality in a project deliverable.",
+    
+    "What is stakeholder management?",
+    "Explain how you identify and communicate with stakeholders.",
+    "Give an example of managing stakeholder expectations successfully.",
+    
+    "What is resource management in project management?",
+    "Explain how to allocate resources efficiently.",
+    "Give an example of resolving resource conflicts in a project.",
+    
+    "What is project monitoring and control?",
+    "Explain techniques to track project performance.",
+    "Give an example of taking corrective action during a project.",
+    
+    "What are KPIs in project management?",
+    "Explain key performance indicators used to measure project success.",
+    "Give an example of defining KPIs for a project.",
+    
+    "What is the role of a project manager?",
+    "Explain skills needed to be an effective project manager.",
+    "Give an example of a leadership decision you made in a project.",
+    
+    "What is Agile project management?",
+    "Explain the principles of Agile and its benefits.",
+    "Give an example of implementing Agile practices in a project.",
+    
+    "What is a Scrum framework?",
+    "Explain Scrum roles, ceremonies, and artifacts.",
+    "Give an example of running a Scrum sprint successfully.",
+    
+    "What is critical path method (CPM) in project scheduling?",
+    "Explain how to calculate the critical path.",
+    "Give an example of managing tasks using CPM.",
+    
+    "What is Earned Value Management (EVM)?",
+    "Explain metrics like CPI and SPI.",
+    "Give an example of tracking project performance using EVM.",
+    
+    "What is change management in projects?",
+    "Explain how to manage change requests effectively.",
+    "Give an example of a project where change management was critical.",
+    
+    "How do you handle project conflicts?",
+    "Explain techniques for conflict resolution.",
+    "Give an example of resolving a team conflict during a project.",
+    
+    "What is project closure?",
+    "Explain steps for formally closing a project.",
+    "Give an example of documenting lessons learned at the end of a project.",
+    
+    "What are project management tools you have used?",
+    "Explain how tools like MS Project, Jira, or Trello help manage projects.",
+    "Give an example of improving project efficiency using a tool."
+  ]
+  ,
+  
+  "Sales Executive": [
+    "What do you understand by the role of a sales executive?",
+    "Explain the key responsibilities of a sales executive.",
+    "Can you describe a successful sales experience you had?",
+
+    "How do you generate leads for sales?",
+    "Explain techniques for prospecting new clients.",
+    "Give an example of how you converted a lead into a customer.",
+
+    "What is the sales process you follow?",
+    "Explain the steps from lead generation to closing a deal.",
+    "Give an example of managing a sales pipeline effectively.",
+
+    "How do you handle objections from clients?",
+    "Explain a situation where you overcame a difficult objection.",
+    "Give strategies to turn a ‘no’ into a ‘yes’.",
+
+    "What are key performance indicators (KPIs) in sales?",
+    "Explain metrics like sales targets, conversion rate, and revenue.",
+    "Give an example of meeting or exceeding your sales KPIs.",
+
+    "How do you approach cold calling or cold emailing?",
+    "Explain techniques to increase cold call success rate.",
+    "Give an example of a successful cold outreach.",
+
+    "What is consultative selling?",
+    "Explain how consultative selling helps in building relationships.",
+    "Give an example where you applied consultative selling successfully.",
+
+    "How do you build and maintain client relationships?",
+    "Explain strategies for long-term customer retention.",
+    "Give an example of strengthening a key client relationship.",
+
+    "What is upselling and cross-selling?",
+    "Explain techniques to increase sales from existing clients.",
+    "Give an example of successful upselling or cross-selling.",
+
+    "How do you research and understand your target market?",
+    "Explain how market knowledge improves sales performance.",
+    "Give an example of tailoring your approach based on market insights.",
+
+    "What role does CRM software play in sales?",
+    "Explain how you use tools like Salesforce, HubSpot, or Zoho CRM.",
+    "Give an example of improving sales efficiency using a CRM.",
+
+    "How do you handle rejection in sales?",
+    "Explain strategies to stay motivated after losing a deal.",
+    "Give an example of turning a failure into a learning opportunity.",
+
+    "What is the difference between B2B and B2C sales?",
+    "Explain techniques for selling in B2B versus B2C scenarios.",
+    "Give an example of a successful B2B/B2C deal you closed.",
+
+    "How do you negotiate with clients?",
+    "Explain techniques for effective negotiation.",
+    "Give an example of a challenging negotiation and how you succeeded.",
+
+    "How do you prioritize your leads and sales activities?",
+    "Explain methods to manage time and focus on high-value clients.",
+    "Give an example of increasing sales by prioritizing effectively.",
+
+    "What is the role of digital tools in modern sales?",
+    "Explain how social media and online platforms help in lead generation.",
+    "Give an example of using digital channels to boost sales.",
+
+    "How do you measure your sales performance?",
+    "Explain ways to track personal and team sales metrics.",
+    "Give an example of improving performance based on these metrics.",
+
+    "What is the difference between inbound and outbound sales?",
+    "Explain strategies for inbound versus outbound approaches.",
+    "Give an example of a successful inbound/outbound campaign.",
+
+    "How do you stay updated on industry trends and competitors?",
+    "Explain how competitor analysis improves your sales strategy.",
+    "Give an example of adapting your pitch based on market insights.",
+
+    "How do you handle multiple clients and deals simultaneously?",
+    "Explain techniques for multitasking and organization in sales.",
+    "Give an example of managing several high-priority deals at once."
+  ]
+  ,
+  
+  "Business Development Executive": [
+    "What do you understand by the role of a business development executive?",
+    "Explain the key responsibilities of a business development executive.",
+    "Can you describe a successful business development experience you had?",
+
+    "How do you identify new business opportunities?",
+    "Explain the methods you use to generate leads and prospects.",
+    "Give an example of discovering a profitable business opportunity.",
+
+    "What is your approach to building client relationships?",
+    "Explain strategies for nurturing long-term business partnerships.",
+    "Give an example of strengthening a client relationship for growth.",
+
+    "How do you research and analyze the market?",
+    "Explain the importance of market research in business development.",
+    "Give an example of adapting strategy based on market insights.",
+
+    "How do you pitch a new product or service to potential clients?",
+    "Explain techniques for creating persuasive business proposals.",
+    "Give an example of successfully pitching a product or service.",
+
+    "How do you collaborate with sales and marketing teams?",
+    "Explain the role of teamwork in business development.",
+    "Give an example of a successful cross-functional project.",
+
+    "What is your strategy for entering a new market?",
+    "Explain steps you take to expand business in untapped areas.",
+    "Give an example of a new market expansion you were part of.",
+
+    "How do you handle competition in business development?",
+    "Explain strategies to differentiate your company from competitors.",
+    "Give an example of winning a deal against strong competition.",
+
+    "How do you set and achieve business targets?",
+    "Explain methods for tracking progress and achieving goals.",
+    "Give an example of exceeding your business development targets.",
+
+    "What role does networking play in business development?",
+    "Explain how professional connections help in generating opportunities.",
+    "Give an example of securing a deal through networking.",
+
+    "How do you negotiate contracts and agreements?",
+    "Explain your approach to effective negotiation.",
+    "Give an example of a challenging negotiation and the outcome.",
+
+    "How do you balance short-term gains with long-term growth?",
+    "Explain strategies to maintain sustainable business development.",
+    "Give an example where you prioritized long-term client value.",
+
+    "What are KPIs you track as a business development executive?",
+    "Explain metrics like lead conversion rate, revenue growth, and client retention.",
+    "Give an example of improving performance using KPIs.",
+
+    "How do you handle rejection or failed deals?",
+    "Explain strategies for learning from unsuccessful attempts.",
+    "Give an example of turning a failed deal into a future opportunity.",
+
+    "What is your experience with digital tools in business development?",
+    "Explain how CRM software and online platforms help growth.",
+    "Give an example of leveraging technology to acquire clients.",
+
+    "How do you prioritize leads and opportunities?",
+    "Explain methods to focus on high-value prospects.",
+    "Give an example of optimizing your efforts for maximum impact.",
+
+    "How do you stay updated on industry trends and competitor activities?",
+    "Explain the importance of continuous market learning.",
+    "Give an example of adapting your strategy based on trends.",
+
+    "How do you collaborate with clients to identify their needs?",
+    "Explain consultative approaches to business development.",
+    "Give an example of tailoring a solution to a client’s requirements.",
+
+    "How do you measure the success of your business development efforts?",
+    "Explain tracking metrics and ROI for development activities.",
+    "Give an example of achieving measurable results from your strategy.",
+
+    "How do you develop long-term strategic plans?",
+    "Explain your approach to planning for sustainable growth.",
+    "Give an example of implementing a successful strategic initiative."
+  ]
+  ,
+  
+  "Graphic Design / UI-UX Design": [
+    "Can you describe your design process from concept to final product?",
+    "Explain the steps you take when creating a user interface design.",
+    "How do you approach a new design project for a client?",
+
+    "What design tools and software are you most proficient in?",
+    "Explain how you use tools like Adobe Photoshop, Illustrator, or Figma.",
+    "Give an example of a project where your choice of tool improved results.",
+
+    "How do you balance aesthetics and functionality in your designs?",
+    "Explain your approach to creating visually appealing yet usable interfaces.",
+    "Give an example where design and usability worked together in a project.",
+
+    "What is your understanding of UI vs UX?",
+    "Explain the difference between user interface and user experience design.",
+    "Give an example of a project where both UI and UX were crucial.",
+
+    "How do you conduct user research for design projects?",
+    "Explain methods like surveys, interviews, and usability testing.",
+    "Give an example of how research informed your design decisions.",
+
+    "What is the importance of wireframes and prototypes?",
+    "Explain how you create wireframes and interactive prototypes.",
+    "Give an example where prototyping improved the final design.",
+
+    "How do you ensure accessibility in your designs?",
+    "Explain strategies to make designs inclusive for all users.",
+    "Give an example of implementing accessibility features in a project.",
+
+    "What is your experience with responsive and adaptive design?",
+    "Explain how you design interfaces for multiple devices and screen sizes.",
+    "Give an example of a responsive design project you worked on.",
+
+    "How do you handle client feedback and revisions?",
+    "Explain your approach to iterating designs based on feedback.",
+    "Give an example of successfully incorporating client feedback.",
+
+    "What role does typography play in your design work?",
+    "Explain how you choose fonts and styles for projects.",
+    "Give an example of using typography to enhance user experience.",
+
+    "How do you use color theory in your designs?",
+    "Explain choosing color palettes for branding and usability.",
+    "Give an example where color choices impacted user perception.",
+
+    "How do you approach designing for brand consistency?",
+    "Explain maintaining visual identity across multiple platforms.",
+    "Give an example of ensuring consistent branding in a project.",
+
+    "What are some common UX challenges you face?",
+    "Explain methods to identify and solve usability issues.",
+    "Give an example where you improved UX through research and testing.",
+
+    "How do you perform usability testing?",
+    "Explain techniques like A/B testing, heatmaps, or user interviews.",
+    "Give an example of design changes made after usability testing.",
+
+    "What is your approach to information architecture?",
+    "Explain how you organize content and navigation for clarity.",
+    "Give an example of a project where IA improved usability.",
+
+    "How do you keep up with design trends?",
+    "Explain how staying updated influences your work.",
+    "Give an example of incorporating modern trends in a project.",
+
+    "What is the role of storytelling in design?",
+    "Explain how visual storytelling engages users.",
+    "Give an example of using storytelling in a user interface.",
+
+    "How do you handle tight deadlines and multiple design projects?",
+    "Explain your time management and prioritization strategies.",
+    "Give an example of delivering a high-quality design under pressure.",
+
+    "What is your experience with motion design and animation?",
+    "Explain how animation can improve user experience.",
+    "Give an example of a project where motion design enhanced the interface.",
+
+    "How do you collaborate with developers and other team members?",
+    "Explain your approach to ensuring smooth handoff from design to development.",
+    "Give an example of successful cross-functional collaboration.",
+
+    "How do you measure the success of your designs?",
+    "Explain using metrics like user engagement, conversion, or usability scores.",
+    "Give an example of a design project that achieved measurable results."
+  ]
+  ,
+  
+  "Cybersecurity Analyst / IT Security": [
+    "Can you describe your experience with cybersecurity frameworks and standards?",
+    "Explain how you implement security measures according to frameworks like NIST or ISO 27001.",
+    "Give an example of applying a security standard in a past project.",
+
+    "What is the difference between symmetric and asymmetric encryption?",
+    "Explain when you would use symmetric vs asymmetric encryption.",
+    "Give an example of using encryption to secure data.",
+
+    "How do you conduct vulnerability assessments?",
+    "Explain tools and techniques for identifying system vulnerabilities.",
+    "Give an example of a vulnerability you found and mitigated.",
+
+    "What are common types of cyberattacks?",
+    "Explain the difference between phishing, ransomware, and DDoS attacks.",
+    "Give an example of defending against a specific type of cyberattack.",
+
+    "What is network security and how do you ensure it?",
+    "Explain methods like firewalls, IDS/IPS, and segmentation.",
+    "Give an example of implementing network security in a project.",
+
+    "How do you handle incident response?",
+    "Explain the steps you take when responding to a security breach.",
+    "Give an example of managing a real or simulated security incident.",
+
+    "What are penetration tests and why are they important?",
+    "Explain the difference between black-box and white-box testing.",
+    "Give an example of a penetration test you conducted.",
+
+    "How do you secure web applications?",
+    "Explain methods to prevent XSS, CSRF, and SQL injection attacks.",
+    "Give an example of improving a web app's security.",
+
+    "What is multi-factor authentication (MFA) and why is it important?",
+    "Explain different types of MFA methods.",
+    "Give an example of implementing MFA in an organization.",
+
+    "How do you monitor security logs and alerts?",
+    "Explain tools and techniques for log monitoring.",
+    "Give an example of identifying a threat using logs.",
+
+    "What is the principle of least privilege?",
+    "Explain how you apply least privilege in system access controls.",
+    "Give an example of enforcing least privilege in a network.",
+
+    "How do you secure endpoints and devices?",
+    "Explain measures like antivirus, patching, and device hardening.",
+    "Give an example of securing endpoints in a corporate environment.",
+
+    "What is social engineering and how can it be prevented?",
+    "Explain common social engineering attacks.",
+    "Give an example of training employees to avoid social engineering.",
+
+    "How do you secure cloud infrastructure?",
+    "Explain methods for cloud security in AWS, Azure, or GCP.",
+    "Give an example of implementing security best practices in the cloud.",
+
+    "What is the difference between IDS and IPS?",
+    "Explain how intrusion detection and prevention systems work.",
+    "Give an example of using IDS/IPS in a network setup.",
+
+    "What is threat modeling?",
+    "Explain how you identify potential threats and risks.",
+    "Give an example of performing threat modeling for a project.",
+
+    "How do you ensure data privacy and compliance?",
+    "Explain regulations like GDPR, HIPAA, or CCPA.",
+    "Give an example of implementing compliance measures.",
+
+    "What are common security misconfigurations?",
+    "Explain how to detect and fix security misconfigurations.",
+    "Give an example of resolving a misconfiguration issue.",
+
+    "How do you handle patch management?",
+    "Explain the process of keeping systems up to date.",
+    "Give an example of managing patches to prevent vulnerabilities.",
+
+    "What is endpoint detection and response (EDR)?",
+    "Explain how EDR helps in detecting advanced threats.",
+    "Give an example of using EDR to mitigate a security incident.",
+
+    "How do you secure APIs and web services?",
+    "Explain authentication, authorization, and encryption in APIs.",
+    "Give an example of securing an API in your project.",
+
+    "What is the difference between vulnerability, threat, and risk?",
+    "Explain how you assess risk in cybersecurity.",
+    "Give an example of mitigating a high-risk threat.",
+
+    "How do you stay updated with the latest cybersecurity threats?",
+    "Explain sources and methods for threat intelligence.",
+    "Give an example of applying recent threat intelligence to protect systems.",
+
+    "What is endpoint hardening?",
+    "Explain techniques for hardening operating systems and applications.",
+    "Give an example of endpoint hardening in a real project.",
+
+    "How do you conduct a security audit?",
+    "Explain the steps in performing a comprehensive security audit.",
+    "Give an example of findings from a security audit and how they were resolved.",
+
+    "What is ransomware and how can it be prevented?",
+    "Explain backup strategies, user training, and technical controls.",
+    "Give an example of preventing or mitigating a ransomware attack."
+  ]
+  ,
+  
+  "Network Engineer / Network Administration": [
+    "Can you explain the OSI and TCP/IP models?",
+    "Describe the layers of the OSI model and their functions.",
+    "Give an example of how the OSI model helps in network troubleshooting.",
+
+    "What is the difference between a switch, router, and hub?",
+    "Explain when you would use a switch vs a router.",
+    "Give an example of configuring a network using switches and routers.",
+
+    "How do IP addresses and subnetting work?",
+    "Explain the difference between public and private IP addresses.",
+    "Give an example of designing a subnet for a network.",
+
+    "What is VLAN and why is it used?",
+    "Explain how VLAN segmentation improves network performance.",
+    "Give an example of configuring VLANs on switches.",
+
+    "What are common routing protocols?",
+    "Explain the difference between static and dynamic routing.",
+    "Give an example of configuring OSPF or EIGRP in a network.",
+
+    "What is NAT (Network Address Translation) and why is it important?",
+    "Explain how NAT works in IPv4 networks.",
+    "Give an example of configuring NAT on a router.",
+
+    "How do you troubleshoot network connectivity issues?",
+    "Explain common tools like ping, traceroute, and nslookup.",
+    "Give an example of diagnosing and resolving a network problem.",
+
+    "What are firewalls and how do they work?",
+    "Explain different types of firewalls (stateful vs stateless).",
+    "Give an example of implementing a firewall policy.",
+
+    "What is DHCP and how does it function?",
+    "Explain how DHCP assigns IP addresses automatically.",
+    "Give an example of setting up a DHCP server in a network.",
+
+    "What is DNS and how does it work?",
+    "Explain the difference between forward and reverse DNS lookups.",
+    "Give an example of configuring DNS for a domain.",
+
+    "How do you secure a network?",
+    "Explain techniques like ACLs, VPNs, and encryption.",
+    "Give an example of implementing network security measures.",
+
+    "What is a VPN and why is it used?",
+    "Explain the difference between site-to-site and remote-access VPNs.",
+    "Give an example of configuring a VPN connection.",
+
+    "How do you monitor network performance?",
+    "Explain tools like SNMP, Wireshark, and network analyzers.",
+    "Give an example of resolving performance issues using monitoring tools.",
+
+    "What are the differences between IPv4 and IPv6?",
+    "Explain how IPv6 addresses are structured.",
+    "Give an example of migrating a network to IPv6.",
+
+    "What is QoS (Quality of Service) and why is it important?",
+    "Explain how QoS prioritizes network traffic.",
+    "Give an example of configuring QoS on a router.",
+
+    "What is a DMZ (Demilitarized Zone) and why is it used?",
+    "Explain how a DMZ separates internal and external networks.",
+    "Give an example of setting up a DMZ in a corporate network.",
+
+    "What is the difference between TCP and UDP?",
+    "Explain scenarios where TCP is preferred over UDP.",
+    "Give an example of an application using UDP effectively.",
+
+    "What are load balancers and how do they work?",
+    "Explain the difference between Layer 4 and Layer 7 load balancing.",
+    "Give an example of implementing a load balancer in a network.",
+
+    "How do you handle network redundancy and failover?",
+    "Explain protocols like HSRP, VRRP, or GLBP.",
+    "Give an example of configuring network redundancy.",
+
+    "What is SNMP and how is it used in network management?",
+    "Explain SNMP traps and polling.",
+    "Give an example of using SNMP to monitor network devices.",
+
+    "What is a network topology and what types are common?",
+    "Explain differences between star, bus, ring, and mesh topologies.",
+    "Give an example of designing a network topology for an office.",
+
+    "What is port forwarding and why is it used?",
+    "Explain how to configure port forwarding on a router.",
+    "Give an example of setting up port forwarding for a service.",
+
+    "How do you secure Wi-Fi networks?",
+    "Explain encryption methods like WPA2 and WPA3.",
+    "Give an example of securing a wireless network in a company.",
+
+    "What is MPLS and why is it used?",
+    "Explain how MPLS improves network efficiency.",
+    "Give an example of implementing MPLS in a WAN.",
+
+    "How do you perform network backups and recovery?",
+    "Explain the importance of configuration backups for devices.",
+    "Give an example of restoring a network from backups.",
+
+    "What is a proxy server and why is it used?",
+    "Explain the difference between forward and reverse proxies.",
+    "Give an example of configuring a proxy in a network.",
+
+    "What is network segmentation and why is it important?",
+    "Explain how segmentation enhances security and performance.",
+    "Give an example of implementing network segmentation in an office.",
+
+    "How do you troubleshoot DNS issues?",
+    "Explain steps to resolve DNS resolution problems.",
+    "Give an example of fixing a DNS-related issue in a project."
+  ]
+  ,
+  
+  "Cloud Computing / DevOps": [
+    "What is cloud computing and what are its main types?",
+    "Explain the difference between IaaS, PaaS, and SaaS.",
+    "Give an example of using cloud services in a project.",
+
+    "What are some popular cloud providers?",
+    "Explain why you would choose AWS, Azure, or GCP.",
+    "Give an example of a service you used from a cloud provider.",
+
+    "What is virtualization and how does it relate to cloud computing?",
+    "Explain the difference between virtual machines and containers.",
+    "Give an example of using virtualization in your projects.",
+
+    "What are containers and why are they important?",
+    "Explain the difference between Docker and traditional VMs.",
+    "Give an example of deploying an application using Docker.",
+
+    "What is Kubernetes and why is it used?",
+    "Explain the architecture of a Kubernetes cluster.",
+    "Give an example of deploying a service on Kubernetes.",
+
+    "What is DevOps and why is it important?",
+    "Explain the benefits of DevOps culture in software development.",
+    "Give an example of implementing DevOps practices in a project.",
+
+    "What is CI/CD and how does it work?",
+    "Explain the difference between continuous integration and continuous deployment.",
+    "Give an example of setting up a CI/CD pipeline.",
+
+    "What tools are commonly used in DevOps?",
+    "Explain how Jenkins, GitLab CI, or GitHub Actions are used.",
+    "Give an example of automating a build or deployment process.",
+
+    "What is Infrastructure as Code (IaC)?",
+    "Explain tools like Terraform or Ansible for IaC.",
+    "Give an example of provisioning infrastructure using code.",
+
+    "What is serverless computing and how does it differ from traditional cloud?",
+    "Explain use cases for AWS Lambda or Azure Functions.",
+    "Give an example of deploying a serverless function.",
+
+    "What is cloud security and how do you ensure it?",
+    "Explain concepts like IAM, encryption, and security groups.",
+    "Give an example of implementing security in a cloud environment.",
+
+    "What are load balancers and why are they used in the cloud?",
+    "Explain the difference between application and network load balancers.",
+    "Give an example of configuring a load balancer for an application.",
+
+    "What is auto-scaling and how does it improve application performance?",
+    "Explain how auto-scaling works in AWS, Azure, or GCP.",
+    "Give an example of configuring auto-scaling for a service.",
+
+    "What are cloud storage options and their differences?",
+    "Explain object storage vs block storage vs file storage.",
+    "Give an example of using S3, EBS, or Azure Blob Storage.",
+
+    "What is monitoring and logging in DevOps?",
+    "Explain tools like Prometheus, Grafana, and CloudWatch.",
+    "Give an example of solving issues using monitoring and logs.",
+
+    "What is container orchestration and why is it needed?",
+    "Explain differences between Kubernetes, Docker Swarm, and Mesos.",
+    "Give an example of orchestrating multiple containers.",
+
+    "What is a microservices architecture in the cloud?",
+    "Explain how cloud and DevOps facilitate microservices.",
+    "Give an example of deploying a microservices application.",
+
+    "What is version control and why is it important in DevOps?",
+    "Explain Git workflow in a CI/CD pipeline.",
+    "Give an example of using Git to manage code in a DevOps setup.",
+
+    "How do you manage secrets and credentials in the cloud?",
+    "Explain tools like AWS Secrets Manager or HashiCorp Vault.",
+    "Give an example of securing credentials for a cloud service.",
+
+    "What is configuration management and why is it important?",
+    "Explain tools like Ansible, Puppet, or Chef.",
+    "Give an example of automating server configuration.",
+
+    "What is blue-green deployment and why is it used?",
+    "Explain the difference between blue-green and rolling deployments.",
+    "Give an example of implementing a blue-green deployment.",
+
+    "What is canary deployment and why would you use it?",
+    "Explain how canary deployment reduces risk.",
+    "Give an example of deploying a new feature using canary.",
+
+    "How do you handle disaster recovery in the cloud?",
+    "Explain strategies like backups, snapshots, and multi-region replication.",
+    "Give an example of restoring a system after a cloud outage.",
+
+    "What is CI/CD pipeline testing and why is it important?",
+    "Explain unit, integration, and end-to-end tests in a pipeline.",
+    "Give an example of automating tests in CI/CD.",
+
+    "What is container registry and why is it needed?",
+    "Explain Docker Hub, AWS ECR, or GCP Container Registry.",
+    "Give an example of storing and deploying images from a registry.",
+
+    "What is the difference between horizontal and vertical scaling?",
+    "Explain scenarios where each scaling method is preferable.",
+    "Give an example of scaling an application in the cloud.",
+
+    "How do you ensure high availability of cloud applications?",
+    "Explain multi-zone and multi-region deployments.",
+    "Give an example of deploying a highly available service.",
+
+    "What is cloud cost optimization and why is it important?",
+    "Explain strategies to reduce cloud expenses.",
+    "Give an example of optimizing cloud costs in a project."
+  ]
+  ,
+  
+  "Content Creation / Social Media Management": [
+    "What is content marketing and why is it important?",
+    "Explain the role of content creation in digital marketing.",
+    "How does content marketing help businesses grow?",
+
+    "What types of content do you create for social media?",
+    "Explain the difference between blog posts, videos, and infographics.",
+    "Give examples of content formats that engage audiences effectively.",
+
+    "How do you plan a social media content calendar?",
+    "Explain the steps to create a content calendar.",
+    "Give an example of managing content scheduling across platforms.",
+
+    "What are KPIs (Key Performance Indicators) for social media?",
+    "Explain metrics like engagement rate, reach, and impressions.",
+    "How do you measure social media performance?",
+
+    "What is audience segmentation and why is it important?",
+    "Explain how you identify target audiences for content.",
+    "Give an example of creating content for a specific audience segment.",
+
+    "How do you conduct competitor analysis for social media?",
+    "Explain tools used for competitor research.",
+    "Give an example of insights gained from competitor analysis.",
+
+    "What are hashtags and how do you use them effectively?",
+    "Explain the role of hashtags in increasing reach.",
+    "Give an example of a successful hashtag strategy you implemented.",
+
+    "What is SEO and how does it relate to content creation?",
+    "Explain how keywords influence content visibility.",
+    "Give an example of optimizing content for search engines.",
+
+    "What is the difference between organic and paid social media posts?",
+    "Explain when to use paid promotion over organic reach.",
+    "Give an example of a campaign using both strategies.",
+
+    "What are the best practices for writing engaging social media posts?",
+    "Explain techniques like storytelling, call-to-action, and visuals.",
+    "Give an example of a post that received high engagement.",
+
+    "What are social media analytics tools you have used?",
+    "Explain how you track performance using tools like Google Analytics, Hootsuite, or Buffer.",
+    "Give an example of using analytics to improve content strategy.",
+
+    "How do you create content for different social media platforms?",
+    "Explain differences in content style for Instagram, LinkedIn, and Twitter.",
+    "Give an example of adapting content for multiple platforms.",
+
+    "What is influencer marketing and how do you collaborate with influencers?",
+    "Explain the process of selecting and working with influencers.",
+    "Give an example of a successful influencer campaign.",
+
+    "What is user-generated content and why is it valuable?",
+    "Explain how to encourage users to create content.",
+    "Give an example of leveraging user-generated content for marketing.",
+
+    "What is content curation and how do you do it?",
+    "Explain how to select relevant content from other sources.",
+    "Give an example of curated content used in a campaign.",
+
+    "How do you handle negative comments or feedback on social media?",
+    "Explain strategies for reputation management.",
+    "Give an example of resolving a social media issue professionally.",
+
+    "What are some trends in social media marketing?",
+    "Explain how you stay updated with social media trends.",
+    "Give an example of implementing a recent trend in your strategy.",
+
+    "What is the role of video content in social media?",
+    "Explain why video content drives engagement.",
+    "Give an example of creating or editing a video for social media.",
+
+    "How do you measure ROI (Return on Investment) for content marketing?",
+    "Explain methods to calculate content ROI.",
+    "Give an example of proving ROI for a campaign.",
+
+    "What are content management systems (CMS) and which ones have you used?",
+    "Explain how CMS helps in scheduling and publishing content.",
+    "Give an example of managing content using WordPress, HubSpot, or another CMS.",
+
+    "How do you use storytelling in social media posts?",
+    "Explain techniques for creating emotional connections with the audience.",
+    "Give an example of a post that effectively used storytelling.",
+
+    "What is A/B testing in social media campaigns?",
+    "Explain how to test content variations to improve performance.",
+    "Give an example of a successful A/B test you conducted.",
+
+    "How do you optimize content for engagement and conversions?",
+    "Explain strategies like CTA placement, visuals, and timing.",
+    "Give an example of content that increased engagement or sales.",
+
+    "What are social media algorithms and how do they affect content visibility?",
+    "Explain how platforms like Facebook, Instagram, or LinkedIn prioritize content.",
+    "Give an example of optimizing content according to algorithms.",
+
+    "What is community management and why is it important?",
+    "Explain how to build and nurture an online community.",
+    "Give an example of engaging and growing a social media community.",
+
+    "How do you plan campaigns for product launches on social media?",
+    "Explain steps from content creation to post-launch analysis.",
+    "Give an example of a successful product launch campaign.",
+
+    "What tools do you use for content design and editing?",
+    "Explain the use of Canva, Photoshop, Premiere Pro, or similar tools.",
+    "Give an example of creating visually appealing content.",
+
+    "How do you stay updated with social media platform changes?",
+    "Explain strategies for keeping up with updates and trends.",
+    "Give an example of adapting your strategy to platform updates."
+  ]
+  ,
+  
+  "Product Management": [
+    "What is the role of a product manager?",
+    "Explain the responsibilities of a product manager in a team.",
+    "How does a product manager contribute to a product's success?",
+
+    "What is product lifecycle management?",
+    "Explain the stages of a product lifecycle.",
+    "Give an example of managing a product from launch to growth.",
+
+    "How do you gather requirements for a new product?",
+    "Explain techniques for collecting user and stakeholder requirements.",
+    "Give an example of successfully gathering product requirements.",
+
+    "What is market research and why is it important for product management?",
+    "Explain how you conduct market research.",
+    "Give an example of using market research to influence product decisions.",
+
+    "How do you define a product roadmap?",
+    "Explain the purpose of a product roadmap.",
+    "Give an example of creating and maintaining a product roadmap.",
+
+    "What is the difference between a product vision and a product strategy?",
+    "Explain how vision and strategy guide product decisions.",
+    "Give an example of defining a product vision and strategy.",
+
+    "How do you prioritize features for a product?",
+    "Explain methods like MoSCoW, RICE, or Kano for prioritization.",
+    "Give an example of prioritizing features effectively.",
+
+    "What is a Minimum Viable Product (MVP)?",
+    "Explain why MVPs are important in product development.",
+    "Give an example of launching an MVP to validate a concept.",
+
+    "How do you collect and analyze user feedback?",
+    "Explain techniques like surveys, interviews, and analytics.",
+    "Give an example of using feedback to improve a product.",
+
+    "What are key performance indicators (KPIs) for a product?",
+    "Explain how KPIs help track product success.",
+    "Give an example of measuring product performance with KPIs.",
+
+    "How do you handle a product that is not performing well?",
+    "Explain the steps to identify issues and improve performance.",
+    "Give an example of turning around an underperforming product.",
+
+    "What is stakeholder management and why is it important?",
+    "Explain techniques for managing stakeholder expectations.",
+    "Give an example of resolving conflicts between stakeholders.",
+
+    "How do you work with cross-functional teams?",
+    "Explain collaboration with engineering, design, and marketing.",
+    "Give an example of successfully leading a cross-functional team.",
+
+    "What is a product backlog and how do you manage it?",
+    "Explain how to prioritize and update a product backlog.",
+    "Give an example of managing a backlog effectively.",
+
+    "What is Agile product management?",
+    "Explain how Agile principles apply to product management.",
+    "Give an example of using Agile methods in a product development cycle.",
+
+    "How do you define success metrics for a product?",
+    "Explain the importance of measurable goals.",
+    "Give an example of setting and achieving success metrics.",
+
+    "What is A/B testing and how do you use it in product management?",
+    "Explain designing and analyzing A/B tests.",
+    "Give an example of making product decisions based on A/B testing results.",
+
+    "How do you perform competitive analysis?",
+    "Explain techniques to study competitors’ products.",
+    "Give an example of using competitor insights to improve your product.",
+
+    "What is a product requirement document (PRD)?",
+    "Explain how to write an effective PRD.",
+    "Give an example of a PRD you created for a project.",
+
+    "How do you handle changes in product requirements?",
+    "Explain change management strategies in product development.",
+    "Give an example of successfully managing changing requirements.",
+
+    "What is the difference between product management and project management?",
+    "Explain how product managers and project managers collaborate.",
+    "Give an example of distinguishing responsibilities in a product project.",
+
+    "How do you make data-driven product decisions?",
+    "Explain the use of analytics and metrics to guide product choices.",
+    "Give an example of using data to make a critical product decision.",
+
+    "What is user experience (UX) and why is it important in product management?",
+    "Explain the role of UX in product success.",
+    "Give an example of improving a product based on UX feedback.",
+
+    "How do you manage product releases?",
+    "Explain release planning and deployment strategies.",
+    "Give an example of a successful product launch you managed.",
+
+    "What is the role of customer personas in product management?",
+    "Explain how personas help guide product decisions.",
+    "Give an example of creating and using customer personas.",
+
+    "How do you balance short-term wins with long-term product vision?",
+    "Explain strategies to manage immediate needs vs strategic goals.",
+    "Give an example of maintaining product vision while delivering quick wins.",
+
+    "What are some common challenges faced by product managers?",
+    "Explain how you tackle challenges like scope creep or stakeholder conflicts.",
+    "Give an example of overcoming a product management challenge.",
+
+    "What tools do you use for product management?",
+    "Explain the use of tools like Jira, Trello, or Asana.",
+    "Give an example of managing a product using PM tools.",
+
+    "How do you ensure alignment between product and business goals?",
+    "Explain strategies for aligning product objectives with company strategy.",
+    "Give an example of achieving product-business goal alignment."
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

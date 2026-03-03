@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Analysis Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep-space: #030613;
+    --cell-bg: rgba(20, 55, 87, 0.2);
+    --border-glow: rgba(0, 255, 224, 0.3);
+    --accent-glow: #00FFE0;
+    --text-primary: #D0EFFF;
+    --text-secondary: #6B8B9E;
+    --accent-green: #2BFF88;
+    --accent-orange: #FFD25A;
+    --accent-red: #FF5A8D;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px -5px var(--accent-glow); }
+    50% { box-shadow: 0 0 35px 0px var(--accent-glow); }
+  }
+
+  @keyframes subtle-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-deep-space);
+    background-image: radial-gradient(circle at 20% 20%, rgba(0, 255, 224, 0.1) 0%, transparent 30%),
+                      radial-gradient(circle at 80% 70%, rgba(43, 255, 136, 0.1) 0%, transparent 30%);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .bio-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-shadow: 0 0 10px var(--accent-glow);
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .data-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px 280px 1fr;
+    grid-template-rows: 230px 230px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .data-cell {
+    background: var(--cell-bg);
+    border: 1px solid var(--border-glow);
+    padding: 25px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .data-cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 var(--border-glow);
+  }
+
+  .data-cell:not(.core)::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    opacity: 0.8;
+    box-shadow: 0 0 8px var(--accent-glow);
+  }
+
+  .cell-eye::before, .cell-fillers::before {
+    right: -30px;
+    top: 50%;
+    transform: translateY(-1px);
+    background: linear-gradient(to right, var(--accent-glow), transparent);
+  }
+
+  .cell-wpm::before, .cell-tips::before {
+    left: -30px;
+    top: 50%;
+    transform: translateY(-1px);
+    background: linear-gradient(to left, var(--accent-glow), transparent);
+  }
+
+  .cell-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* CORE - Main Score */
+  .core {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    min-height: 480px;
+    border-radius: 50%;
+    animation: pulse 4s infinite ease-in-out;
+    z-index: 10;
+  }
+  .score-value {
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--accent-glow);
+    line-height: 1;
+    text-shadow: 0 0 20px var(--accent-glow);
+    margin: 0;
+  }
+  #suggestionsText {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 250px;
+  }
+
+  /* Other Cells */
+  .cell-eye { grid-column: 1; grid-row: 1; width: 230px; height: 230px; justify-self: end; animation: subtle-float 6s infinite ease-in-out; }
+  .cell-wpm { grid-column: 4; grid-row: 1; width: 230px; height: 230px; justify-self: start; animation: subtle-float 7s infinite ease-in-out; }
+  .cell-fillers { grid-column: 1; grid-row: 2; width: 230px; height: 230px; justify-self: end; animation: subtle-float 8s infinite ease-in-out; }
+  .cell-tips { grid-column: 4; grid-row: 2; width: 230px; height: 230px; justify-self: start; animation: subtle-float 5s infinite ease-in-out; }
+  
+  /* Eye Contact */
+  #eyeChart { max-height: 100px; }
+  #eyeContactValue {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-green);
+  }
+  
+  /* WPM */
+  #wpmValue {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-orange);
+  }
+
+  /* Fillers & Tips */
+  .data-list {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  .data-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  .filler-badge {
+    background: var(--accent-red);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    body {
+      display: block;
+      padding: 20px;
+    }
+    .data-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .data-cell, .core {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      min-height: 180px;
+      border-radius: 20px;
+      animation: none !important;
+    }
+    .core { min-height: 300px; }
+    .score-value { font-size: 5rem; }
+    .data-cell:not(.core)::before {
+        display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="bio-container">
+  <header>
+    <h1>Performance Analysis</h1>
+  </header>
+
+  <div class="data-grid">
+    
+    <div class="data-cell core">
+      <p class="cell-title">Performance Core</p>
+      <h2 class="score-value" id="scoreValue">0%</h2>
+      <p id="suggestionsText">Awaiting analysis...</p>
+    </div>
+
+    <div class="data-cell cell-eye">
+      <p class="cell-title">Eye Contact</p>
+      <canvas id="eyeChart"></canvas>
+      <p id="eyeContactValue">N/A</p>
+    </div>
+
+    <div class="data-cell cell-wpm">
+      <p class="cell-title">Pacing (WPM)</p>
+      <p id="wpmValue">0</p>
+    </div>
+    
+    <div class="data-cell cell-fillers">
+      <p class="cell-title">Filler Words</p>
+      <ul class="data-list" id="fillerList">
+        <li>None</li>
+      </ul>
+    </div>
+
+    <div class="data-cell cell-tips">
+      <p class="cell-title">Tips</p>
+      <ul class="data-list" id="tipsList">
+        <li>Maintain eye level.</li>
+        <li>Speak at a clear pace.</li>
+        <li>Pause, don't fill.</li>
+      </ul>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  // ======= Eye Contact Chart =======
+  const eyeChart = new Chart(document.getElementById('eyeChart'), {
+    type:'doughnut',
+    data:{
+      labels:['Eye Contact','Missed'],
+      datasets:[{data:[0,100], backgroundColor:['#2BFF88', 'rgba(0, 255, 224, 0.1)'], borderWidth:0}]
+    },
+    options:{
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout:'75%',
+      plugins:{
+        legend:{display:false},
+        tooltip: {enabled: false}
+      }
+    }
+  });
+
+  // ======= Default Data =======
+  const defaultData = {
+    eye:"N/A",
+    wpm:0,
+    fillers:{},
+    score:0,
+    suggestions:"Your personalized feedback will appear here after the analysis."
+  };
+
+  // ======= Fetch Data from localStorage =======
+  let storedData = {};
+  try { storedData = JSON.parse(localStorage.getItem('dashboardData')) || {}; } catch(e){ storedData = {}; }
+  const stats = Object.assign({}, defaultData, storedData);
+
+  // ======= Update Dashboard =======
+  function updateDashboard(stats){
+    // Eye Contact
+    const eyeValue = stats.eye ?? "N/A";
+    document.getElementById("eyeContactValue").textContent = (typeof eyeValue === "number" ? eyeValue.toFixed(1)+"%" : eyeValue);
+    if(typeof eyeValue === "number"){
+      eyeChart.data.datasets[0].data = [eyeValue, 100-eyeValue];
+      eyeChart.update();
+    }
+
+    // Words Per Minute
+    document.getElementById("wpmValue").textContent = stats.wpm || 0;
+
+    // Filler Words
+    const fillerList = document.getElementById("fillerList");
+    fillerList.innerHTML = '';
+    if(stats.fillers && Object.keys(stats.fillers).length){
+      Object.entries(stats.fillers).forEach(([word,count])=>{
+        const li = document.createElement('li');
+        li.innerHTML = `${word} <span class="filler-badge">${count}</span>`;
+        fillerList.appendChild(li);
+      });
+    } else fillerList.innerHTML = '<li>None detected</li>';
+
+    // Final Score & Suggestions
+    document.getElementById("scoreValue").textContent = stats.score+"%";
+    document.getElementById("suggestionsText").textContent = stats.suggestions || "No suggestions available.";
+  }
+
+  // Initialize
+  updateDashboard(stats);
+  window.updateInterviewDashboard = updateDashboard;
+</script>
+
+</body>
+</html>
+

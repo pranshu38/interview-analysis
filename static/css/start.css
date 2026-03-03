@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a1a;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+/* Subtle texture + gradient */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url('https://www.transparenttextures.com/patterns/clean-textile.png'),
+                      linear-gradient(180deg, #0a0a1a 0%, #1a1a3a 100%);
+    opacity: 0.1;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: -1;
+}
+
+.background-image.active {
+    opacity: 0.15;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.text-glow {
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.7), 0 0 12px rgba(0, 191, 255, 0.5);
+}
+
+.button-glow {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.6), 0 0 25px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+}
+
+.button-glow:hover {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.9), 0 0 40px rgba(59, 130, 246, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Ticker effect */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker-scroll 40s linear infinite;
+}
+
+.ticker span {
+    margin: 0 40px;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+@keyframes ticker-scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}

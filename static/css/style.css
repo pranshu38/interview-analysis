@@ -1,0 +1,178 @@
+/* Interstellar UI Theme */
+:root {
+  --space: #0a0f18; 
+  --surface: rgba(10, 25, 47, 0.7); 
+  --surface-strong: rgba(10, 25, 47, 0.85);
+  --border: rgba(0, 170, 255, 0.35); 
+  --border-strong: rgba(0, 170, 255, 0.7); 
+  --text: #e6f1ff;
+  --muted: #8892b0; 
+  --blue: #00aaff; 
+  --orange: #ff8c00; 
+  --focus: #9bfffa;
+  --shadow: 0 0 25px rgba(10, 25, 47, 0.5); 
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0; 
+  font-family: 'Exo 2', sans-serif; 
+  background-color: var(--space); 
+  color: var(--text);
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
+  background-image: radial-gradient(1200px 700px at 70% -10%, rgba(0,170,255,0.12), transparent 60%),
+                    radial-gradient(900px 500px at -10% 20%, rgba(255,140,0,0.08), transparent 60%),
+                    url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071');
+  background-size: cover; 
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.panel { 
+  background: var(--surface); 
+  border: 1px solid var(--border); 
+  border-radius: var(--radius); 
+  backdrop-filter: blur(10px); 
+  box-shadow: var(--shadow); 
+}
+
+.main-header { 
+  position: sticky; 
+  top: 0; left: 0; right: 0; 
+  z-index: 50; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0.85rem 5%; 
+  background: var(--surface-strong); 
+  border-bottom: 1px solid var(--border); 
+  backdrop-filter: blur(10px); 
+}
+
+.logo { 
+  font-size: 1.35rem; 
+  font-weight: 700; 
+  letter-spacing: .14em; 
+}
+
+.main-nav { 
+  display: flex; 
+  gap: clamp(1rem, 2.2vw, 2rem); 
+  align-items: center; 
+}
+
+.main-nav a { 
+  color: var(--muted); 
+  font-weight: 600; 
+  position: relative; 
+}
+
+.main-nav a.active, 
+.main-nav a:hover { color: var(--orange); }
+
+.main-nav a::after { 
+  content:""; 
+  position:absolute; 
+  left:0; bottom:-6px; 
+  height:2px; width:0; 
+  background: var(--orange); 
+  transition: width .25s; 
+}
+
+.main-nav a:hover::after, 
+.main-nav a.active::after { width: 100%; }
+
+.container { 
+  width: min(1200px, 92%); 
+  margin-inline: auto; 
+  flex: 1; 
+  display: grid; 
+  place-items: center; 
+  padding-block: 4rem; 
+}
+
+.hero { text-align: center; margin-top: 1.5rem; }
+.hero h1 { 
+  font-size: clamp(2.4rem, 5vw, 4.5rem); 
+  font-weight: 800; 
+  letter-spacing: 0.02em; 
+}
+.hero p { 
+  font-size: clamp(1rem, 1.4vw, 1.25rem); 
+  color: var(--muted); 
+  margin: 1rem auto 2.2rem; 
+  max-width: 720px; 
+  font-weight: 300; 
+}
+
+.action-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: clamp(1rem, 2.5vw, 2rem); 
+  align-items: stretch; 
+  width: 100%; 
+}
+
+.card { 
+  padding: clamp(1.4rem, 2.6vw, 2.4rem); 
+  transition: transform .25s, border-color .25s, box-shadow .25s; 
+}
+.card i { 
+  font-size: 2.6rem; 
+  margin-bottom: .75rem; 
+  color: var(--blue); 
+  display: inline-block; 
+}
+.card h2 { 
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem); 
+  margin: .25rem 0 0.6rem; 
+  font-weight: 700; 
+}
+.card p { 
+  color: var(--muted); 
+  line-height: 1.6; 
+}
+.card:hover { 
+  transform: translateY(-6px); 
+  border-color: var(--border-strong); 
+  box-shadow: 0 10px 30px rgba(0,0,0,.25); 
+}
+
+.btn { 
+  display: inline-flex; 
+  align-items: center; 
+  gap:.5rem; 
+  margin-top: 1.2rem; 
+  padding: .8rem 1.4rem; 
+  border-radius: 10px; 
+  font-weight: 700; 
+  border: 1px solid var(--orange); 
+  background: transparent; 
+  color: var(--text); 
+  cursor: pointer; 
+}
+.btn:hover { 
+  background: var(--orange); 
+  color: var(--space); 
+}
+
+.main-footer { 
+  margin-top: 3rem; 
+  padding: 2.4rem 5%; 
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 100%); 
+  border-top: 1px solid var(--border); 
+}
+
+.footer-bottom { 
+  text-align: center; 
+  padding-top: 1.4rem; 
+  border-top: 1px solid var(--border); 
+  color: var(--muted); 
+  font-size: .95rem; 
+}

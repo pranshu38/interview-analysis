@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eon AI - Interview Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0a0a1a;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background-image: url('https://www.transparenttextures.com/patterns/clean-textile.png'), 
+                              linear-gradient(180deg, #0a0a1a 0%, #1a1a3a 100%);
+            opacity: 0.1;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            z-index: -1;
+        }
+        .background-image.active {
+            opacity: 0.15;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .text-glow {
+            text-shadow: 0 0 8px rgba(0, 191, 255, 0.7), 0 0 12px rgba(0, 191, 255, 0.5);
+        }
+        .button-glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.6), 0 0 25px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease;
+        }
+        .button-glow:hover {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.9), 0 0 40px rgba(59, 130, 246, 0.6);
+            transform: translateY(-2px);
+        }
+        .ticker-wrap {
+            width: 100%;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker-scroll 40s linear infinite;
+        }
+        .ticker span {
+            margin: 0 40px;
+            color: #9ca3af;
+            font-style: italic;
+        }
+        @keyframes ticker-scroll {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        /* New styles for the typewriter cursor */
+        .blinking-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1em;
+            background-color: #3b82f6;
+            margin-left: 4px;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { background-color: transparent; }
+            50% { background-color: #3b82f6; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <div class="background-container"></div>
+    <div id="background-slider"></div>
+
+    <div class="relative flex flex-col md:flex-row">
+        
+        <div class="w-full md:w-1/2 md:sticky md:top-0 md:h-screen">
+             <img src="{{ url_for('static', filename='images/unnamed.png') }}" alt="3D AI Illustration" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-full md:w-1/2">
+            <div class="min-h-screen flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 lg:p-16">
+                
+                <div class="w-full min-h-[12rem] flex items-center justify-center md:justify-start mb-6">
+                    <p id="animated-quote" class="text-xl lg:text-2xl font-orbitron text-blue-300 text-glow"></p>
+                </div>
+
+                <h1 class="text-6xl md:text-7xl lg:text-8xl font-orbitron font-bold uppercase tracking-wide">EON <span class="text-blue-500 text-glow">AI</span></h1>
+                
+                <p class="mt-4 text-lg text-gray-300 max-w-lg">
+                    Step into the future of interview preparation. Our AI analyzes your every word, nuance, and expression to give you the winning edge.
+                </p>
+
+                <a href="{{ url_for('home') }}" 
+   class="mt-8 inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-lg text-lg uppercase tracking-wider button-glow">
+   Enter the Simulation
+</a>
+
+                <div class="ticker-wrap mt-8 w-full">
+                    <div class="ticker" id="instruction-ticker"></div>
+                </div>
+            </div>
+
+            <div class="p-8 lg:p-16 text-center md:text-left">
+                <h2 class="text-4xl font-orbitron font-bold mb-8 text-glow">How It Works</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">1. Record Your Mock Interview</h3>
+                            <p class="text-gray-400 mt-2">Use our platform to record yourself answering common interview questions.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                             <svg class="h-8 w-8 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3M5.636 5.636L4.222 4.222m15.556 15.556L18.364 18.364M4.222 19.778L5.636 18.364m15.556-15.556L18.364 5.636" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">2. AI-Powered Analysis</h3>
+                            <p class="text-gray-400 mt-2">Our AI processes your recording, analyzing key metrics like speech clarity, filler words, and eye contact.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                         <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">3. Get Actionable Feedback</h3>
+                            <p class="text-gray-400 mt-2">Receive a detailed report with personalized suggestions to build confidence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Background Image Slideshow ---
+            const backgrounds = [
+                'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+                'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+                'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+            ];
+            const slider = document.getElementById('background-slider');
+            backgrounds.forEach((bg, index) => {
+                const div = document.createElement('div');
+                div.className = 'background-image';
+                if (index === 0) div.classList.add('active');
+                div.style.backgroundImage = `url(${bg})`;
+                slider.appendChild(div);
+            });
+            let currentBgIndex = 0;
+            const bgDivs = document.querySelectorAll('.background-image');
+            setInterval(() => {
+                bgDivs[currentBgIndex].classList.remove('active');
+                currentBgIndex = (currentBgIndex + 1) % backgrounds.length;
+                bgDivs[currentBgIndex].classList.add('active');
+            }, 5000);
+
+            // --- NEW Typewriter Animation Logic ---
+            const quoteElement = document.getElementById('animated-quote');
+            const quotes = [
+                "An interview is a conversation to prove your value, not just a test of your knowledge.",
+                "Let your passion shine brighter than your resume, and turn every question into a story of your success.",
+                "True preparation builds the confidence to not just answer, but to connect."
+            ];
+            let quoteIndex = 0;
+            const typingSpeed = 50;
+            const erasingSpeed = 30;
+            const delayBetweenQuotes = 2000;
+
+            const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+            const typeWriter = async (text) => {
+                quoteElement.innerHTML = '';
+                for (let i = 0; i < text.length; i++) {
+                    quoteElement.innerHTML += text.charAt(i);
+                    await sleep(typingSpeed);
+                }
+            };
+
+            const erase = async (text) => {
+                for (let i = text.length; i > 0; i--) {
+                    quoteElement.innerHTML = text.substring(0, i - 1);
+                    await sleep(erasingSpeed);
+                }
+            };
+
+            const quoteLoop = async () => {
+                while (true) {
+                    const currentQuote = quotes[quoteIndex];
+                    await typeWriter(currentQuote);
+                    await sleep(delayBetweenQuotes);
+                    await erase(currentQuote);
+                    await sleep(500);
+                    quoteIndex = (quoteIndex + 1) % quotes.length;
+                }
+            };
+
+            quoteLoop();
+
+            // --- Instructional Ticker Logic ---
+            const instructions = [
+                "INSTRUCTIONS: Face the camera directly.",
+                "Ensure your environment is well-lit and quiet.",
+                "Speak clearly and at a moderate pace.",
+                "Listen to questions actively before you speak.",
+                "Maintain eye contact with the camera.",
+                "Be yourself. Authenticity is key."
+            ];
+            const instructionTicker = document.getElementById('instruction-ticker');
+            const populateTicker = (tickerElement, lines) => {
+                const content = lines.map(line => `<span>${line}</span>`).join('');
+                tickerElement.innerHTML = content + content;
+            };
+            populateTicker(instructionTicker, instructions);
+        });
+    </script>
+
+</body>
+</html>

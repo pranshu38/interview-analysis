@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AI Interview Prep - Get Started</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="page-wrapper">
+        <div class="page-container">
+            <header class="home-header">
+                <h1>Get Started</h1>
+                <p>First, upload your resume and select your target job field to personalize your interview session.</p>
+            </header>
+
+            <main class="home-grid">
+                <!-- Upload Resume Block -->
+                <div class="panel home-card">
+                    <div class="card-header">Step 1: Upload Resume</div>
+                    <label for="resume-file-input" class="upload-area">
+                        <i class='bx bxs-file-find'></i>
+                        <p><strong>Click to browse</strong> or drag and drop</p>
+                        <span id="file-name-display">No file selected</span>
+                    </label>
+                    <input type="file" id="resume-file-input" accept=".pdf" hidden>
+                </div>
+
+                <!-- Choose Job Field Block -->
+                <div class="panel home-card">
+                    <div class="card-header">Step 2: Choose Job Field</div>
+                    <div class="select-container">
+                        <select id="job-field-select" class="job-select">
+                            <option value="" disabled selected>Select a field...</option>
+                            <option value="software-engineering">Software Engineering</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="data-analytics">Data Analytics</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="finance">Finance</option>
+                            <option value="human-resource">Human Resource</option>
+                            <option value="project-management">Project Management</option>
+                            <option value="sales-executive">Sales Executive</option>
+                            <option value="business-development-executive">Business Development Executive</option>
+                            <option value="ui-ux-designer">UI/UX Designer</option>
+                            <option value="graphic-designer">Graphic Designer</option>
+                            <option value="cyber-security-analyst">Cyber Security Analyst</option>
+                            <option value="network-engineer">Network Engineer</option>
+                            <option value="cloud-computing">Cloud Computing</option>
+                            <option value="content-creation-social-media">Content Creation / Social Media Management</option>
+                            <option value="product-manager">Product Manager</option>
+                        </select>
+                    </div>
+                    <p class="field-description" id="field-description">Your questions will be tailored to this field.</p>
+                </div>
+            </main>
+            
+            <footer class="home-footer">
+                <button class="btn primary" id="next-button">
+                    Proceed to Interview <i class='bx bx-right-arrow-alt'></i>
+                </button>
+                <!-- Fake processing animation container -->
+                <div id="fake-process-container" class="fake-process-container"></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>

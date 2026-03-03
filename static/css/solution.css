@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', 'Roboto', sans-serif;
+    background-color: #0a0a0a; /* deep space black */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* subtle star texture */
+    color: #e0e0e0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+/* Answers Container */
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Loader */
+.loader {
+    border: 6px solid #1e293b;
+    border-top: 6px solid #00f0ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Answer Card */
+.answer-card {
+    background: rgba(10,10,10,0.85);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.answer-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+}
+
+/* Question Title */
+.answer-card h3 {
+    margin-bottom: 15px;
+    color: #00f0ff;
+    font-size: 1.5rem;
+}
+
+/* Answer Text */
+.answer-card p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #d0f0f0;
+    white-space: pre-line;
+}
+
+/* QA Item for simpler blocks */
+.qa-item {
+    border: 1px solid #00f0ff33;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(10, 10, 10, 0.7);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .answer-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .answer-card p {
+        font-size: 1rem;
+    }
+}
